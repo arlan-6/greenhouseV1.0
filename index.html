@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/navBar.css">
+    <link rel="stylesheet" href="/styles/mainInfo.css">
+    <link rel="stylesheet" href="/styles/chartInfo.css">
+    <link rel="stylesheet" href="/styles/workers.css">
+    <link rel="stylesheet" href="/styles/su.css">
+    <link rel="stylesheet" href="/styles/controlPanel.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./login/login.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenhouse</title>
+</head>
+
+<body>
+    <div class="modalW none">
+        <div class="kiru">
+            <form action="#">
+                <h3>Kiru</h3>
+                <input type="text" name="login" placeholder="Login engiziniz"><br>
+                <input type="password" name="pword" placeholder="Qupia sozdi engiziniz"><br>
+                <button class="kiruSub">Kiru</button>
+            </form>
+        </div>
+    </div>
+    <div class="head">
+        <div class="nav">
+            <div class="navigation">
+                <div class="adress">📌mekenjaıy: asdfg5 56</div>
+            </div>
+            <div class="navigation">
+                <h1>Greenhouse</h1>
+            </div>
+            <div class="navigation">
+                <div class="login">
+                    <img src="./img/photo_2022-06-28_23-12-46.jpg" alt="">
+                    <h2 class="login-kiru">Kiry</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="total-info">
+        <div class="main-info">
+            <div class="boxs">
+                <div class="mini-box">
+                    <img src="./img/plant-based.png" width="100px" alt="">
+                    <h1>Osip jatqan <br> sany:</h1>
+                    <h2>200</h2>
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="mini-box">
+                    <img src="./img/hot-temperature.png" width="100px" alt="">
+                    <h1>Jylajai temperatyrasy:</h1>
+                    <h2><span class="temperature"> 30</span>°C</h2>
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="mini-box">
+                    <img src="./img/humidity.png" width="100px" alt="">
+                    <h1>Aýa ylǵaldylyǵ:</h1>
+                    <h2><span class="humidity"> 40</span>%</h2>
+                </div>
+            </div>
+
+            <div class="boxs">
+                <div class="mini-box">
+                    <img src="./img/electric-meter.png" width="100px" alt="">
+                    <h1>Light Intensity:</h1>
+                    <h2><span class="lightI"> 99</span> lux</h2>
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="mini-box">
+                    <img src="./img/smart-farm.png" width="100px" alt="">
+                    <h1>Plants:</h1>
+                    <h2><span class="waterStatus"> not Watered</span></h2>
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="mini-box">
+                    <img src="./img/fan.png" width="100px" alt="">
+                    <h1>Fans:</h1>
+                    <h2><span class="fanStatus"> Off</span></h2>
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="mini-box">
+                    <img src="./img/ventilation.png" width="100px" alt="">
+                    <h1>Ventilation:</h1>
+                    <h2><span class="ventilationStatus"> Open</span></h2>
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="mini-box">
+                    <img src="./img/fertilizer.png" width="100px" alt="">
+                    <h1>Fertilizer:</h1>
+                    <h2><span class="fertilizerStatus"> added</span></h2>
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="mini-box">
+                    <img src="./img/soil.png" width="100px" alt="">
+                    <h1>Soil:</h1>
+                    <h2><span class="soilStatus"> Changed</span></h2>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="info-box chart"> <canvas id="myChart"></canvas></div>
+        <div class="info-box peop">
+            <div class="peopleCount">
+                <div class="kind" title="фермер sany"><img src="./img/farmer.png" alt="">: <h3>16</h3>
+                </div>
+                <div class="kind" title="ғалым sany"><img src="./img/scientist.png" alt="">: <h3>5</h3>
+                </div>
+                <div class="kind" title="инженер sany"><img src="./img/engineer.png" alt="">: <h3>10</h3>
+                </div>
+                <div class="kind" title="басқарушы sany"><img src="/img/man.png" alt="">: <h3>1</h3>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <img src="./img/faucet.png" alt="" srcset="">
+            <div class="blocks block1">
+                <h3>Block-1</h3>
+                <div class="status">Su aqpai jatyr</div>
+                <div class="su">Su agu qarqyny: <span>50</span>dpm</div>
+            </div>
+            <div class="blocks block2">
+                <h3>Block-2</h3>
+                <div class="status active">Su agyp jatyr</div>
+                <div class="su">Su agu qarqyny: <span>50</span>dpm</div>
+            </div>
+            <div class="blocks block3">
+                <h3>Block-3</h3>
+                <div class="status">Su aqpai jatyr</div>
+                <div class="su">Su agu qarqyny: <span>50</span>dpm</div>
+            </div>
+        </div>
+        <div class="info-box2 hide">
+            <div class="mainPanel">
+                <h3>Basqarý paneli 🛠️</h3>
+                <div class="saveBtn"><img src="/img/save.png" width="30px" alt=""></div>
+                <div class="btnPlus">+</div>
+            </div>
+
+            <div class="ctrlP">
+                <div class="panels temperature">
+                    <h2>Temperature</h2>
+                    <div class="panelBox">
+                        <button class="decrease temperature ctrlValueBtn">⇑</button>
+                        <span class="temperature ctrlValue"><span> 24</span>°C</span>
+                        <button class="increase temperature ctrlValueBtn">⇓</button>
+                    </div>
+
+                </div>
+                <div class="panels humidity">
+                    <h2>Humidity</h2>
+                    <div class="panelBox">
+                        <button class="decrease humidity ctrlValueBtn">⇑</button>
+                        <span class="humidity ctrlValue"><span> 60</span>%</span>
+                        <button class="increase humidity ctrlValueBtn">⇓</button>
+                    </div>
+                </div>
+                <div class="panels light">
+                    <h2>Light Intensity</h2>
+                    <div class="panelBox">
+                        <button class="decrease light ctrlValueBtn">⇑</button>
+                        <span class="light ctrlValue"><span>100</span> lux</span>
+                        <button class="increase light ctrlValueBtn">⇓</button>
+                    </div>
+                </div>
+                <div class="panels ">
+                    <h2>Plants</h2>
+                    <div class="panelBox">
+                        <button class="water-plants ctrlValueSingleBtn">Water Plants</button>
+                        <span class="plants status">Did Not Watered Today!</span>
+                    </div>
+                </div>
+                <div class="panels">
+                    <h2>Fans</h2>
+                    <div class="panelBox">
+                        <button class="turn-on-fans ctrlValueSingleBtn">Turn On Fans</button>
+                        <span class="fans ">Off</span>
+                    </div>
+                </div>
+                <div class="panels">
+                    <h2>Ventilation</h2>
+                    <div class="panelBox">
+                        <button class="open-ventilation ctrlValueSingleBtn">Open Ventilation</button>
+                        <span class="ventilation">Closed</span>
+                    </div>
+                </div>
+                <div class="panels">
+                    <h2>Fertilizer</h2>
+                    <div class="panelBox">
+                        <button class="add-fertilizer ctrlValueSingleBtn">Add Fertilizer</button>
+                        <span class="fertilizer">Not Added</span>
+                    </div>
+                </div>
+                <div class="panels">
+                    <h2>Soil</h2>
+                    <div class="panelBox">
+                        <button class="change-soil ctrlValueSingleBtn">Change Soil</button>
+                        <span class="soil">Not Changed</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="/scripts/chartInfon.js"></script>
+    <script type="module" src="/scripts/controlPanel.js"></script>
+    <script type="module" src="/scripts/controlPanelShowAndHide.js"></script>
+    <script type="module" src="/scripts/mainInfo.js"></script>
+    <script type="module" src="./login/login.js"></script>
+    <script type="module" src="./scripts/getDataFunc.js"></script>
+</body>
+
+</html>

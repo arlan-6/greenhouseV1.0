@@ -1,0 +1,153 @@
+.info-box2{
+    width: calc(100% - 30px);
+    height: calc(700px );
+    background-color: rgb(167, 167, 167);
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 15px;
+    animation: info-box2-2 .7s ;
+}
+@keyframes info-box2-2 {
+    from{
+        height: 65px;
+    }
+    to{
+        height: calc(700px ); 
+    }
+}
+
+.mainPanel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+}
+.mainPanel .btnPlus{
+    flex: 1;
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer;
+    text-shadow: 0 0 5px rgb(52, 51, 51);
+    color:#fff;
+}
+.saveBtn{
+    cursor: pointer;
+    width: 100px;
+    
+}
+.saveBtn img{
+    margin: 0 auto;
+}
+.info-box2 .ctrlP {
+    margin: 15px;
+    border-radius: 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 110px);
+    background-color: rgba(58, 105, 147, 0);
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    border-radius: 20px;
+}
+.hide{
+    height: 65px;
+    animation: info-box2 .7s ;
+}
+@keyframes info-box2{
+    from{        
+        height: calc(700px );
+    }
+    to{
+        height: 65px;
+    }
+}
+.ctrlP .panels{
+    width: 49%;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px rgba(54, 54, 54, 0.439);
+}
+.info-box2 .ctrlP::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 15px;
+}
+.info-box2 .ctrlP::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+.panels h2{
+    margin-top: 20px;
+    color: aliceblue;
+    text-shadow: 0 2px 5px rgba(54, 54, 54, 0.884);
+}
+div.panels {
+    background-image: url(/img/DALL·E\ 2023-02-09\ 00.11.25\ -\ greenhose.png);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: -80px 0;
+}
+div.humidity {
+    background-size: 135%;
+    background-image: url(/img/DALL·E\ 2023-02-09\ 22.29.04\ -\ plants\ in\ a\ pot\ on\ a\ white\ table\ in\ a\ minimalist\ style.png);
+} 
+div.light {
+    background-size: 135%;
+    background-image: url(/img/DALL·E\ 2023-02-10\ 13.45.39\ -\ greenhouse\ in\ the\ top\ lamps\ warm\ and\ illuminate\ the\ room\ with\ plants\ in\ a\ minimalist\ style.png);
+} 
+div.water {
+    background-size: 135%;
+    background-image: url(/img/DALL·E\ 2023-02-10\ 14.03.11\ -\ watering\ plants\ in\ lage\ greenhouse\ in\ a\ minimalist\ style.png);
+} 
+.panels .panelBox{
+    background-color: #454e5233;
+    backdrop-filter: blur(3px);
+    height: 70%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-left: 16.5%;
+    border-radius: 15px;
+    border: 5px solid aliceblue;
+    box-shadow: 0 5px 5px rgba(54, 54, 54, 0.439);
+    text-shadow: 0 5px 5px rgba(54, 54, 54, 0.884);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    color:aliceblue;
+    font-size: 1.5em;
+}
+.panelBox button.ctrlValueBtn{
+    min-width: 80px;
+    min-height: 70px;
+    font-size: 1.5em;
+    border: 3px solid rgb(205, 209, 212);
+    border-radius: 19px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .05s;
+}
+.panelBox button.ctrlValueSingleBtn{
+    font-size: 1em;
+    padding: 9px;
+    border: 3px solid rgb(205, 209, 212);
+    border-radius: 19px;
+    transition: .05s;
+}
+.panelBox button:hover{    
+    border-color: rgb(69, 86, 104);
+    background-color: #d5dde07f;
+    cursor: pointer;
+}
+
+span.plants{
+    font-size: 0.8em;
+    width: 40%;
+}

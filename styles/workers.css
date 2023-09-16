@@ -1,0 +1,48 @@
+.peopleCount{    
+    backdrop-filter: blur(2px);
+    border: 4px solid rgba(135, 207, 235, 0.445);
+    border-radius: 15px;
+    height: 97%;
+    width: 97%;
+    background: linear-gradient(0deg, rgba(207, 229, 248, 0.516), rgba(145, 211, 244, 0.562));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px   ;
+}
+.peop{
+    background-image: url(../img/young-man-with-crop-tomato-greenhouse-vegetables-garden-theme-male-farmer-growing-plants-harvesting-crops-farm-among-field_119217-2310.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 -100px;
+}
+.kind{
+    border: 2px solid rgba(255, 255, 255, 0);
+    width: 40%;
+    height: 39%;
+    border-radius: 15px;
+    display: flex;
+    font-size: 2.5em;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    text-shadow: 0 0 5px gray;
+}
+.kind img{
+    height: 100%;
+    transition: .1s;
+}
+.kind img:hover{    
+    height: 105%;
+}
+.kind h3{
+    margin-left: 10px;
+}
+.info-box2 h3{
+    margin: 20px;
+    color: aliceblue;
+    text-shadow: 0 0 5px rgb(9, 9, 9);
+    flex: 11;
+}

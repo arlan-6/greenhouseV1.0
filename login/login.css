@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.modalW{
+    background-color: rgba(45, 45, 45, 0.224);
+    backdrop-filter: blur(2px);
+    transition: 1s;
+}
+.activee{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h{
+    overflow: hidden;
+}
+.none{
+    display: none;
+}
+.kiru{
+    width: 500px;
+    height: 300px;
+    background-color: rgb(208, 226, 241);
+    text-align: center;
+    border-radius: 20px;
+}
+.kiru h3{
+    margin: 20px;
+}
+.kiru input{
+    width: 350px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    height: 50px;
+    font-size: 1.3em;
+    border-radius: 15px;
+    padding-left: 15px;
+    border: 2px solid white;
+}
+.kiru input:focus{
+    outline: none;
+}
+.kiru button{
+    width: 200px;
+    height: 30px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 15px;
+    transition: .3s;
+    cursor: pointer;
+}
+.kiru button:hover{
+    background-color: rgb(153, 155, 156);
+}
+.qate{
+    border-color:  red ;
+    animation: qate .7s ;
+}
+@keyframes qate{
+    0%{
+        position: relative;
+        left: 0px;
+        border: 2px red solid;
+    }
+    25%{
+        left: 15px;
+    }
+    50%{
+        position: relative;
+        left: -15px;
+        border: 2px red solid;
+    }
+    75%{
+        right: 0;
+        left: 15px;
+    }
+    100%{
+        left: 0;
+        border: 2px red solid;
+    }
+}
